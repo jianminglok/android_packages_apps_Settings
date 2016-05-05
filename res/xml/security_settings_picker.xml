@@ -53,3 +53,9 @@
             android:title="@string/unlock_set_unlock_fingerprint_title"
             android:persistent="false"/>
 </PreferenceScreen>
+     
+     <PreferenceScreen 
+            android:title="@string/fingerprint" 
+            android:key="fingerprint">
+        <intent android:targetPackage="ch.ione.safefingerprint" android:action="android.intent.action.MAIN" android:targetClass="ch.ione.safefingerprint.ui.FingerprintSettings" />
+</PreferenceScreen>
